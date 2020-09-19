@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/emumba/Project_Cpp/app/main.cpp
+iostream
+-
+../include/Containers.h
+/home/emumba/Project_Cpp/include/Containers.h
+
+/home/emumba/Project_Cpp/include/Containers.h
+iostream
+-
+vector
+-
+list
+-
+
