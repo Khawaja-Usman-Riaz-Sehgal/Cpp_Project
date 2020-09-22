@@ -1,2 +1,6 @@
-add_library(containers SHARED containers.cpp)
-set_target_properties(containers PROPERTIES LIBRARY_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/lib)
+cmake_minimum_required(VERSION 3.10)
+
+add_library(out1 SHARED Containers.cpp)
+set_target_properties(out1 PROPERTIES LIBRARY_OUTPUT_DIRECTORY . )
+
+
