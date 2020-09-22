@@ -1,5 +1,14 @@
 {
     "files.associations": {
         "ostream": "cpp"
-    }
+    },
+    "C_Cpp.errorSquiggles": "Enabled",
+    "cSpell.words": [
+        "dirs",
+        "googletest",
+        "gtest",
+        "gtest include dirs",
+        "include",
+        "pthread"
+    ]
 }
