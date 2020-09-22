@@ -48,7 +48,7 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/emumba/Project_Cpp/app
+CMAKE_SOURCE_DIR = /home/emumba/Project_Cpp
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/emumba/Project_Cpp/build
@@ -111,6 +111,45 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named test_out
+
+# Build rule for target.
+test_out: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_out
+.PHONY : test_out
+
+# fast build rule for target.
+test_out/fast:
+	$(MAKE) -f CMakeFiles/test_out.dir/build.make CMakeFiles/test_out.dir/build
+.PHONY : test_out/fast
+
+#=============================================================================
+# Target rules for targets named out
+
+# Build rule for target.
+out: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 out
+.PHONY : out
+
+# fast build rule for target.
+out/fast:
+	$(MAKE) -f CMakeFiles/out.dir/build.make CMakeFiles/out.dir/build
+.PHONY : out/fast
+
+#=============================================================================
+# Target rules for targets named out1
+
+# Build rule for target.
+out1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 out1
+.PHONY : out1
+
+# fast build rule for target.
+out1/fast:
+	$(MAKE) -f src/CMakeFiles/out1.dir/build.make src/CMakeFiles/out1.dir/build
+.PHONY : out1/fast
+
+#=============================================================================
 # Target rules for targets named Cpp_Project
 
 # Build rule for target.
@@ -120,62 +159,105 @@ Cpp_Project: cmake_check_build_system
 
 # fast build rule for target.
 Cpp_Project/fast:
-	$(MAKE) -f CMakeFiles/Cpp_Project.dir/build.make CMakeFiles/Cpp_Project.dir/build
+	$(MAKE) -f app/CMakeFiles/Cpp_Project.dir/build.make app/CMakeFiles/Cpp_Project.dir/build
 .PHONY : Cpp_Project/fast
 
-home/emumba/Project_Cpp/src/Containers.o: home/emumba/Project_Cpp/src/Containers.cpp.o
+#=============================================================================
+# Target rules for targets named runTests
 
-.PHONY : home/emumba/Project_Cpp/src/Containers.o
+# Build rule for target.
+runTests: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 runTests
+.PHONY : runTests
 
-# target to build an object file
-home/emumba/Project_Cpp/src/Containers.cpp.o:
-	$(MAKE) -f CMakeFiles/Cpp_Project.dir/build.make CMakeFiles/Cpp_Project.dir/home/emumba/Project_Cpp/src/Containers.cpp.o
-.PHONY : home/emumba/Project_Cpp/src/Containers.cpp.o
+# fast build rule for target.
+runTests/fast:
+	$(MAKE) -f test/CMakeFiles/runTests.dir/build.make test/CMakeFiles/runTests.dir/build
+.PHONY : runTests/fast
 
-home/emumba/Project_Cpp/src/Containers.i: home/emumba/Project_Cpp/src/Containers.cpp.i
+app/main.o: app/main.cpp.o
 
-.PHONY : home/emumba/Project_Cpp/src/Containers.i
-
-# target to preprocess a source file
-home/emumba/Project_Cpp/src/Containers.cpp.i:
-	$(MAKE) -f CMakeFiles/Cpp_Project.dir/build.make CMakeFiles/Cpp_Project.dir/home/emumba/Project_Cpp/src/Containers.cpp.i
-.PHONY : home/emumba/Project_Cpp/src/Containers.cpp.i
-
-home/emumba/Project_Cpp/src/Containers.s: home/emumba/Project_Cpp/src/Containers.cpp.s
-
-.PHONY : home/emumba/Project_Cpp/src/Containers.s
-
-# target to generate assembly for a file
-home/emumba/Project_Cpp/src/Containers.cpp.s:
-	$(MAKE) -f CMakeFiles/Cpp_Project.dir/build.make CMakeFiles/Cpp_Project.dir/home/emumba/Project_Cpp/src/Containers.cpp.s
-.PHONY : home/emumba/Project_Cpp/src/Containers.cpp.s
-
-main.o: main.cpp.o
-
-.PHONY : main.o
+.PHONY : app/main.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/Cpp_Project.dir/build.make CMakeFiles/Cpp_Project.dir/main.cpp.o
-.PHONY : main.cpp.o
+app/main.cpp.o:
+	$(MAKE) -f CMakeFiles/out.dir/build.make CMakeFiles/out.dir/app/main.cpp.o
+.PHONY : app/main.cpp.o
 
-main.i: main.cpp.i
+app/main.i: app/main.cpp.i
 
-.PHONY : main.i
+.PHONY : app/main.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/Cpp_Project.dir/build.make CMakeFiles/Cpp_Project.dir/main.cpp.i
-.PHONY : main.cpp.i
+app/main.cpp.i:
+	$(MAKE) -f CMakeFiles/out.dir/build.make CMakeFiles/out.dir/app/main.cpp.i
+.PHONY : app/main.cpp.i
 
-main.s: main.cpp.s
+app/main.s: app/main.cpp.s
 
-.PHONY : main.s
+.PHONY : app/main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/Cpp_Project.dir/build.make CMakeFiles/Cpp_Project.dir/main.cpp.s
-.PHONY : main.cpp.s
+app/main.cpp.s:
+	$(MAKE) -f CMakeFiles/out.dir/build.make CMakeFiles/out.dir/app/main.cpp.s
+.PHONY : app/main.cpp.s
+
+src/Containers.o: src/Containers.cpp.o
+
+.PHONY : src/Containers.o
+
+# target to build an object file
+src/Containers.cpp.o:
+	$(MAKE) -f CMakeFiles/test_out.dir/build.make CMakeFiles/test_out.dir/src/Containers.cpp.o
+	$(MAKE) -f CMakeFiles/out.dir/build.make CMakeFiles/out.dir/src/Containers.cpp.o
+.PHONY : src/Containers.cpp.o
+
+src/Containers.i: src/Containers.cpp.i
+
+.PHONY : src/Containers.i
+
+# target to preprocess a source file
+src/Containers.cpp.i:
+	$(MAKE) -f CMakeFiles/test_out.dir/build.make CMakeFiles/test_out.dir/src/Containers.cpp.i
+	$(MAKE) -f CMakeFiles/out.dir/build.make CMakeFiles/out.dir/src/Containers.cpp.i
+.PHONY : src/Containers.cpp.i
+
+src/Containers.s: src/Containers.cpp.s
+
+.PHONY : src/Containers.s
+
+# target to generate assembly for a file
+src/Containers.cpp.s:
+	$(MAKE) -f CMakeFiles/test_out.dir/build.make CMakeFiles/test_out.dir/src/Containers.cpp.s
+	$(MAKE) -f CMakeFiles/out.dir/build.make CMakeFiles/out.dir/src/Containers.cpp.s
+.PHONY : src/Containers.cpp.s
+
+test/test.o: test/test.cpp.o
+
+.PHONY : test/test.o
+
+# target to build an object file
+test/test.cpp.o:
+	$(MAKE) -f CMakeFiles/test_out.dir/build.make CMakeFiles/test_out.dir/test/test.cpp.o
+.PHONY : test/test.cpp.o
+
+test/test.i: test/test.cpp.i
+
+.PHONY : test/test.i
+
+# target to preprocess a source file
+test/test.cpp.i:
+	$(MAKE) -f CMakeFiles/test_out.dir/build.make CMakeFiles/test_out.dir/test/test.cpp.i
+.PHONY : test/test.cpp.i
+
+test/test.s: test/test.cpp.s
+
+.PHONY : test/test.s
+
+# target to generate assembly for a file
+test/test.cpp.s:
+	$(MAKE) -f CMakeFiles/test_out.dir/build.make CMakeFiles/test_out.dir/test/test.cpp.s
+.PHONY : test/test.cpp.s
 
 # Help Target
 help:
@@ -185,13 +267,20 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... test_out"
+	@echo "... out"
+	@echo "... out1"
 	@echo "... Cpp_Project"
-	@echo "... home/emumba/Project_Cpp/src/Containers.o"
-	@echo "... home/emumba/Project_Cpp/src/Containers.i"
-	@echo "... home/emumba/Project_Cpp/src/Containers.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... runTests"
+	@echo "... app/main.o"
+	@echo "... app/main.i"
+	@echo "... app/main.s"
+	@echo "... src/Containers.o"
+	@echo "... src/Containers.i"
+	@echo "... src/Containers.s"
+	@echo "... test/test.o"
+	@echo "... test/test.i"
+	@echo "... test/test.s"
 .PHONY : help
 
 

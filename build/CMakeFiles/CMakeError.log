@@ -1,0 +1,700 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ad715/fast && /usr/bin/make -f CMakeFiles/cmTC_ad715.dir/build.make CMakeFiles/cmTC_ad715.dir/build
+make[1]: Entering directory '/home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ad715.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_ad715.dir/src.c.o   -c /home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_ad715
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ad715.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_ad715.dir/src.c.o  -o cmTC_ad715 
+/usr/bin/ld: CMakeFiles/cmTC_ad715.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_ad715.dir/build.make:87: cmTC_ad715] Error 1
+make[1]: Leaving directory '/home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_ad715/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ab3d2/fast && /usr/bin/make -f CMakeFiles/cmTC_ab3d2.dir/build.make CMakeFiles/cmTC_ab3d2.dir/build
+make[1]: Entering directory '/home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ab3d2.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_ab3d2.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_ab3d2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ab3d2.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_ab3d2.dir/CheckFunctionExists.c.o  -o cmTC_ab3d2  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_ab3d2.dir/build.make:87: cmTC_ab3d2] Error 1
+make[1]: Leaving directory '/home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_ab3d2/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_45121/fast && /usr/bin/make -f CMakeFiles/cmTC_45121.dir/build.make CMakeFiles/cmTC_45121.dir/build
+make[1]: Entering directory '/home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_45121.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_45121.dir/src.c.o   -c /home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_45121
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_45121.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_45121.dir/src.c.o  -o cmTC_45121 
+/usr/bin/ld: CMakeFiles/cmTC_45121.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_45121.dir/build.make:87: cmTC_45121] Error 1
+make[1]: Leaving directory '/home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_45121/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_fcbc1/fast && /usr/bin/make -f CMakeFiles/cmTC_fcbc1.dir/build.make CMakeFiles/cmTC_fcbc1.dir/build
+make[1]: Entering directory '/home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fcbc1.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_fcbc1.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_fcbc1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fcbc1.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_fcbc1.dir/CheckFunctionExists.c.o  -o cmTC_fcbc1  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_fcbc1.dir/build.make:87: cmTC_fcbc1] Error 1
+make[1]: Leaving directory '/home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_fcbc1/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_aaa1b/fast && /usr/bin/make -f CMakeFiles/cmTC_aaa1b.dir/build.make CMakeFiles/cmTC_aaa1b.dir/build
+make[1]: Entering directory '/home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_aaa1b.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_aaa1b.dir/src.c.o   -c /home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_aaa1b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aaa1b.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_aaa1b.dir/src.c.o  -o cmTC_aaa1b 
+/usr/bin/ld: CMakeFiles/cmTC_aaa1b.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_aaa1b.dir/build.make:87: cmTC_aaa1b] Error 1
+make[1]: Leaving directory '/home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_aaa1b/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_96ea7/fast && /usr/bin/make -f CMakeFiles/cmTC_96ea7.dir/build.make CMakeFiles/cmTC_96ea7.dir/build
+make[1]: Entering directory '/home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_96ea7.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_96ea7.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_96ea7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_96ea7.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_96ea7.dir/CheckFunctionExists.c.o  -o cmTC_96ea7  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_96ea7.dir/build.make:87: cmTC_96ea7] Error 1
+make[1]: Leaving directory '/home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_96ea7/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_cba4d/fast && /usr/bin/make -f CMakeFiles/cmTC_cba4d.dir/build.make CMakeFiles/cmTC_cba4d.dir/build
+make[1]: Entering directory '/home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cba4d.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_cba4d.dir/src.c.o   -c /home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_cba4d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cba4d.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_cba4d.dir/src.c.o  -o cmTC_cba4d 
+/usr/bin/ld: CMakeFiles/cmTC_cba4d.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_cba4d.dir/build.make:87: cmTC_cba4d] Error 1
+make[1]: Leaving directory '/home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_cba4d/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_52f07/fast && /usr/bin/make -f CMakeFiles/cmTC_52f07.dir/build.make CMakeFiles/cmTC_52f07.dir/build
+make[1]: Entering directory '/home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_52f07.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_52f07.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_52f07
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_52f07.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_52f07.dir/CheckFunctionExists.c.o  -o cmTC_52f07  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_52f07.dir/build.make:87: cmTC_52f07] Error 1
+make[1]: Leaving directory '/home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_52f07/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_28797/fast && /usr/bin/make -f CMakeFiles/cmTC_28797.dir/build.make CMakeFiles/cmTC_28797.dir/build
+make[1]: Entering directory '/home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_28797.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_28797.dir/src.c.o   -c /home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_28797
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_28797.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_28797.dir/src.c.o  -o cmTC_28797 
+/usr/bin/ld: CMakeFiles/cmTC_28797.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_28797.dir/build.make:87: cmTC_28797] Error 1
+make[1]: Leaving directory '/home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_28797/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b9779/fast && /usr/bin/make -f CMakeFiles/cmTC_b9779.dir/build.make CMakeFiles/cmTC_b9779.dir/build
+make[1]: Entering directory '/home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b9779.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_b9779.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_b9779
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b9779.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_b9779.dir/CheckFunctionExists.c.o  -o cmTC_b9779  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_b9779.dir/build.make:87: cmTC_b9779] Error 1
+make[1]: Leaving directory '/home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_b9779/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e6762/fast && make[1]: Entering directory '/home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_e6762.dir/build.make CMakeFiles/cmTC_e6762.dir/build
+make[2]: Entering directory '/home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e6762.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_e6762.dir/src.c.o   -c /home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_e6762
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e6762.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_e6762.dir/src.c.o  -o cmTC_e6762 
+/usr/bin/ld: CMakeFiles/cmTC_e6762.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/cmTC_e6762.dir/build.make:87: cmTC_e6762] Error 1
+make[2]: Leaving directory '/home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp'
+make[1]: *** [Makefile:121: cmTC_e6762/fast] Error 2
+make[1]: Leaving directory '/home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_6170f/fast && make[1]: Entering directory '/home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_6170f.dir/build.make CMakeFiles/cmTC_6170f.dir/build
+make[2]: Entering directory '/home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6170f.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_6170f.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_6170f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6170f.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_6170f.dir/CheckFunctionExists.c.o  -o cmTC_6170f  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/cmTC_6170f.dir/build.make:87: cmTC_6170f] Error 1
+make[2]: Leaving directory '/home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp'
+make[1]: *** [Makefile:121: cmTC_6170f/fast] Error 2
+make[1]: Leaving directory '/home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp'
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_29d03/fast && /usr/bin/make -f CMakeFiles/cmTC_29d03.dir/build.make CMakeFiles/cmTC_29d03.dir/build
+make[1]: Entering directory '/home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_29d03.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_29d03.dir/src.c.o   -c /home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_29d03
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_29d03.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_29d03.dir/src.c.o  -o cmTC_29d03 
+/usr/bin/ld: CMakeFiles/cmTC_29d03.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_29d03.dir/build.make:87: cmTC_29d03] Error 1
+make[1]: Leaving directory '/home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_29d03/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_8c723/fast && /usr/bin/make -f CMakeFiles/cmTC_8c723.dir/build.make CMakeFiles/cmTC_8c723.dir/build
+make[1]: Entering directory '/home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8c723.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_8c723.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_8c723
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8c723.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_8c723.dir/CheckFunctionExists.c.o  -o cmTC_8c723  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_8c723.dir/build.make:87: cmTC_8c723] Error 1
+make[1]: Leaving directory '/home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_8c723/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_9438e/fast && /usr/bin/make -f CMakeFiles/cmTC_9438e.dir/build.make CMakeFiles/cmTC_9438e.dir/build
+make[1]: Entering directory '/home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9438e.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_9438e.dir/src.c.o   -c /home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_9438e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9438e.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_9438e.dir/src.c.o  -o cmTC_9438e 
+/usr/bin/ld: CMakeFiles/cmTC_9438e.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_9438e.dir/build.make:87: cmTC_9438e] Error 1
+make[1]: Leaving directory '/home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_9438e/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f8dbc/fast && /usr/bin/make -f CMakeFiles/cmTC_f8dbc.dir/build.make CMakeFiles/cmTC_f8dbc.dir/build
+make[1]: Entering directory '/home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f8dbc.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_f8dbc.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_f8dbc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f8dbc.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_f8dbc.dir/CheckFunctionExists.c.o  -o cmTC_f8dbc  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_f8dbc.dir/build.make:87: cmTC_f8dbc] Error 1
+make[1]: Leaving directory '/home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_f8dbc/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_44b38/fast && /usr/bin/make -f CMakeFiles/cmTC_44b38.dir/build.make CMakeFiles/cmTC_44b38.dir/build
+make[1]: Entering directory '/home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_44b38.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_44b38.dir/src.c.o   -c /home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_44b38
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_44b38.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_44b38.dir/src.c.o  -o cmTC_44b38 
+/usr/bin/ld: CMakeFiles/cmTC_44b38.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_44b38.dir/build.make:87: cmTC_44b38] Error 1
+make[1]: Leaving directory '/home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_44b38/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_2e81f/fast && /usr/bin/make -f CMakeFiles/cmTC_2e81f.dir/build.make CMakeFiles/cmTC_2e81f.dir/build
+make[1]: Entering directory '/home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2e81f.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_2e81f.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_2e81f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2e81f.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_2e81f.dir/CheckFunctionExists.c.o  -o cmTC_2e81f  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_2e81f.dir/build.make:87: cmTC_2e81f] Error 1
+make[1]: Leaving directory '/home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_2e81f/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_fae6c/fast && /usr/bin/make -f CMakeFiles/cmTC_fae6c.dir/build.make CMakeFiles/cmTC_fae6c.dir/build
+make[1]: Entering directory '/home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fae6c.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_fae6c.dir/src.c.o   -c /home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_fae6c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fae6c.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_fae6c.dir/src.c.o  -o cmTC_fae6c 
+/usr/bin/ld: CMakeFiles/cmTC_fae6c.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_fae6c.dir/build.make:87: cmTC_fae6c] Error 1
+make[1]: Leaving directory '/home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_fae6c/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_4d934/fast && /usr/bin/make -f CMakeFiles/cmTC_4d934.dir/build.make CMakeFiles/cmTC_4d934.dir/build
+make[1]: Entering directory '/home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4d934.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_4d934.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_4d934
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4d934.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_4d934.dir/CheckFunctionExists.c.o  -o cmTC_4d934  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_4d934.dir/build.make:87: cmTC_4d934] Error 1
+make[1]: Leaving directory '/home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_4d934/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_70f13/fast && /usr/bin/make -f CMakeFiles/cmTC_70f13.dir/build.make CMakeFiles/cmTC_70f13.dir/build
+make[1]: Entering directory '/home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_70f13.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_70f13.dir/src.c.o   -c /home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_70f13
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_70f13.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_70f13.dir/src.c.o  -o cmTC_70f13 
+/usr/bin/ld: CMakeFiles/cmTC_70f13.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_70f13.dir/build.make:87: cmTC_70f13] Error 1
+make[1]: Leaving directory '/home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_70f13/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a6834/fast && /usr/bin/make -f CMakeFiles/cmTC_a6834.dir/build.make CMakeFiles/cmTC_a6834.dir/build
+make[1]: Entering directory '/home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a6834.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_a6834.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a6834
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a6834.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_a6834.dir/CheckFunctionExists.c.o  -o cmTC_a6834  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_a6834.dir/build.make:87: cmTC_a6834] Error 1
+make[1]: Leaving directory '/home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_a6834/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_9d23d/fast && /usr/bin/make -f CMakeFiles/cmTC_9d23d.dir/build.make CMakeFiles/cmTC_9d23d.dir/build
+make[1]: Entering directory '/home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9d23d.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_9d23d.dir/src.c.o   -c /home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_9d23d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9d23d.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_9d23d.dir/src.c.o  -o cmTC_9d23d 
+/usr/bin/ld: CMakeFiles/cmTC_9d23d.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_9d23d.dir/build.make:87: cmTC_9d23d] Error 1
+make[1]: Leaving directory '/home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_9d23d/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e2e5f/fast && /usr/bin/make -f CMakeFiles/cmTC_e2e5f.dir/build.make CMakeFiles/cmTC_e2e5f.dir/build
+make[1]: Entering directory '/home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e2e5f.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_e2e5f.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e2e5f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e2e5f.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_e2e5f.dir/CheckFunctionExists.c.o  -o cmTC_e2e5f  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_e2e5f.dir/build.make:87: cmTC_e2e5f] Error 1
+make[1]: Leaving directory '/home/emumba/Project_Cpp/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_e2e5f/fast] Error 2
+
+
+

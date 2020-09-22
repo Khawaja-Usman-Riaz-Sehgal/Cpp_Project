@@ -44,7 +44,7 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/emumba/Project_Cpp/app
+CMAKE_SOURCE_DIR = /home/emumba/Project_Cpp
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/emumba/Project_Cpp/build
@@ -53,46 +53,218 @@ CMAKE_BINARY_DIR = /home/emumba/Project_Cpp/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/Cpp_Project.dir/all
+all: CMakeFiles/test_out.dir/all
+all: CMakeFiles/out.dir/all
+all: src/all
+all: app/all
+all: test/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: src/preinstall
+preinstall: app/preinstall
+preinstall: test/preinstall
 
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/Cpp_Project.dir/clean
+clean: CMakeFiles/test_out.dir/clean
+clean: CMakeFiles/out.dir/clean
+clean: src/clean
+clean: app/clean
+clean: test/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/Cpp_Project.dir
+# Directory level rules for directory app
+
+# Recursive "all" directory target.
+app/all: app/CMakeFiles/Cpp_Project.dir/all
+
+.PHONY : app/all
+
+# Recursive "preinstall" directory target.
+app/preinstall:
+
+.PHONY : app/preinstall
+
+# Recursive "clean" directory target.
+app/clean: app/CMakeFiles/Cpp_Project.dir/clean
+
+.PHONY : app/clean
+
+#=============================================================================
+# Directory level rules for directory src
+
+# Recursive "all" directory target.
+src/all: src/CMakeFiles/out1.dir/all
+
+.PHONY : src/all
+
+# Recursive "preinstall" directory target.
+src/preinstall:
+
+.PHONY : src/preinstall
+
+# Recursive "clean" directory target.
+src/clean: src/CMakeFiles/out1.dir/clean
+
+.PHONY : src/clean
+
+#=============================================================================
+# Directory level rules for directory test
+
+# Recursive "all" directory target.
+test/all: test/CMakeFiles/runTests.dir/all
+
+.PHONY : test/all
+
+# Recursive "preinstall" directory target.
+test/preinstall:
+
+.PHONY : test/preinstall
+
+# Recursive "clean" directory target.
+test/clean: test/CMakeFiles/runTests.dir/clean
+
+.PHONY : test/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_out.dir
 
 # All Build rule for target.
-CMakeFiles/Cpp_Project.dir/all:
-	$(MAKE) -f CMakeFiles/Cpp_Project.dir/build.make CMakeFiles/Cpp_Project.dir/depend
-	$(MAKE) -f CMakeFiles/Cpp_Project.dir/build.make CMakeFiles/Cpp_Project.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/emumba/Project_Cpp/build/CMakeFiles --progress-num=1,2,3 "Built target Cpp_Project"
-.PHONY : CMakeFiles/Cpp_Project.dir/all
+CMakeFiles/test_out.dir/all:
+	$(MAKE) -f CMakeFiles/test_out.dir/build.make CMakeFiles/test_out.dir/depend
+	$(MAKE) -f CMakeFiles/test_out.dir/build.make CMakeFiles/test_out.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/emumba/Project_Cpp/build/CMakeFiles --progress-num=12,13,14 "Built target test_out"
+.PHONY : CMakeFiles/test_out.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Cpp_Project.dir/rule: cmake_check_build_system
+CMakeFiles/test_out.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/emumba/Project_Cpp/build/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Cpp_Project.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_out.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/emumba/Project_Cpp/build/CMakeFiles 0
-.PHONY : CMakeFiles/Cpp_Project.dir/rule
+.PHONY : CMakeFiles/test_out.dir/rule
 
 # Convenience name for target.
-Cpp_Project: CMakeFiles/Cpp_Project.dir/rule
+test_out: CMakeFiles/test_out.dir/rule
+
+.PHONY : test_out
+
+# clean rule for target.
+CMakeFiles/test_out.dir/clean:
+	$(MAKE) -f CMakeFiles/test_out.dir/build.make CMakeFiles/test_out.dir/clean
+.PHONY : CMakeFiles/test_out.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/out.dir
+
+# All Build rule for target.
+CMakeFiles/out.dir/all:
+	$(MAKE) -f CMakeFiles/out.dir/build.make CMakeFiles/out.dir/depend
+	$(MAKE) -f CMakeFiles/out.dir/build.make CMakeFiles/out.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/emumba/Project_Cpp/build/CMakeFiles --progress-num=4,5,6 "Built target out"
+.PHONY : CMakeFiles/out.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/out.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/emumba/Project_Cpp/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/out.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/emumba/Project_Cpp/build/CMakeFiles 0
+.PHONY : CMakeFiles/out.dir/rule
+
+# Convenience name for target.
+out: CMakeFiles/out.dir/rule
+
+.PHONY : out
+
+# clean rule for target.
+CMakeFiles/out.dir/clean:
+	$(MAKE) -f CMakeFiles/out.dir/build.make CMakeFiles/out.dir/clean
+.PHONY : CMakeFiles/out.dir/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/out1.dir
+
+# All Build rule for target.
+src/CMakeFiles/out1.dir/all:
+	$(MAKE) -f src/CMakeFiles/out1.dir/build.make src/CMakeFiles/out1.dir/depend
+	$(MAKE) -f src/CMakeFiles/out1.dir/build.make src/CMakeFiles/out1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/emumba/Project_Cpp/build/CMakeFiles --progress-num=7,8 "Built target out1"
+.PHONY : src/CMakeFiles/out1.dir/all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/out1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/emumba/Project_Cpp/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/out1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/emumba/Project_Cpp/build/CMakeFiles 0
+.PHONY : src/CMakeFiles/out1.dir/rule
+
+# Convenience name for target.
+out1: src/CMakeFiles/out1.dir/rule
+
+.PHONY : out1
+
+# clean rule for target.
+src/CMakeFiles/out1.dir/clean:
+	$(MAKE) -f src/CMakeFiles/out1.dir/build.make src/CMakeFiles/out1.dir/clean
+.PHONY : src/CMakeFiles/out1.dir/clean
+
+#=============================================================================
+# Target rules for target app/CMakeFiles/Cpp_Project.dir
+
+# All Build rule for target.
+app/CMakeFiles/Cpp_Project.dir/all:
+	$(MAKE) -f app/CMakeFiles/Cpp_Project.dir/build.make app/CMakeFiles/Cpp_Project.dir/depend
+	$(MAKE) -f app/CMakeFiles/Cpp_Project.dir/build.make app/CMakeFiles/Cpp_Project.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/emumba/Project_Cpp/build/CMakeFiles --progress-num=1,2,3 "Built target Cpp_Project"
+.PHONY : app/CMakeFiles/Cpp_Project.dir/all
+
+# Build rule for subdir invocation for target.
+app/CMakeFiles/Cpp_Project.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/emumba/Project_Cpp/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 app/CMakeFiles/Cpp_Project.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/emumba/Project_Cpp/build/CMakeFiles 0
+.PHONY : app/CMakeFiles/Cpp_Project.dir/rule
+
+# Convenience name for target.
+Cpp_Project: app/CMakeFiles/Cpp_Project.dir/rule
 
 .PHONY : Cpp_Project
 
 # clean rule for target.
-CMakeFiles/Cpp_Project.dir/clean:
-	$(MAKE) -f CMakeFiles/Cpp_Project.dir/build.make CMakeFiles/Cpp_Project.dir/clean
-.PHONY : CMakeFiles/Cpp_Project.dir/clean
+app/CMakeFiles/Cpp_Project.dir/clean:
+	$(MAKE) -f app/CMakeFiles/Cpp_Project.dir/build.make app/CMakeFiles/Cpp_Project.dir/clean
+.PHONY : app/CMakeFiles/Cpp_Project.dir/clean
+
+#=============================================================================
+# Target rules for target test/CMakeFiles/runTests.dir
+
+# All Build rule for target.
+test/CMakeFiles/runTests.dir/all:
+	$(MAKE) -f test/CMakeFiles/runTests.dir/build.make test/CMakeFiles/runTests.dir/depend
+	$(MAKE) -f test/CMakeFiles/runTests.dir/build.make test/CMakeFiles/runTests.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/emumba/Project_Cpp/build/CMakeFiles --progress-num=9,10,11 "Built target runTests"
+.PHONY : test/CMakeFiles/runTests.dir/all
+
+# Build rule for subdir invocation for target.
+test/CMakeFiles/runTests.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/emumba/Project_Cpp/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/runTests.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/emumba/Project_Cpp/build/CMakeFiles 0
+.PHONY : test/CMakeFiles/runTests.dir/rule
+
+# Convenience name for target.
+runTests: test/CMakeFiles/runTests.dir/rule
+
+.PHONY : runTests
+
+# clean rule for target.
+test/CMakeFiles/runTests.dir/clean:
+	$(MAKE) -f test/CMakeFiles/runTests.dir/build.make test/CMakeFiles/runTests.dir/clean
+.PHONY : test/CMakeFiles/runTests.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

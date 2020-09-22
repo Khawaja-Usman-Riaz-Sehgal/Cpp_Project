@@ -1,4 +1,4 @@
-# Install script for directory: /home/emumba/Project_Cpp/app
+# Install script for directory: /home/emumba/Project_Cpp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -35,6 +35,14 @@ endif()
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for each subdirectory.
+  include("/home/emumba/Project_Cpp/build/src/cmake_install.cmake")
+  include("/home/emumba/Project_Cpp/build/app/cmake_install.cmake")
+  include("/home/emumba/Project_Cpp/build/test/cmake_install.cmake")
+
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

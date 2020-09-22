@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I"/home/emumba/Project_Cpp/app/../include/*.h" 
+CXX_INCLUDES = 
 
