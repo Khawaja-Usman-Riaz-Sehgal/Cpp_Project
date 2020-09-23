@@ -1,1 +1,0 @@
-/usr/bin/c++    -rdynamic CMakeFiles/Cpp_Project.dir/home/emumba/Project_Cpp/src/Containers.cpp.o CMakeFiles/Cpp_Project.dir/main.cpp.o  -o Cpp_Project 

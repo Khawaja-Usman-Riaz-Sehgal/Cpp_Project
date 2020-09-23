@@ -60,5 +60,6 @@ int main()
     cout<<"Vector: size of squares => "<<c.get_size()<<endl;
     cout<<"List:   size of squares => "<<c1.get_size()<<endl;
     cout<<"\n";
+    
     return 0;
 }

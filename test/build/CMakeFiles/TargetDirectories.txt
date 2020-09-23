@@ -1,3 +1,0 @@
-/home/emumba/Project_Cpp/test/build/CMakeFiles/rebuild_cache.dir
-/home/emumba/Project_Cpp/test/build/CMakeFiles/edit_cache.dir
-/home/emumba/Project_Cpp/test/build/CMakeFiles/runTests.dir

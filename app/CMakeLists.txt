@@ -1,2 +1,5 @@
 
-add_executable(Cpp_Project ../src/Containers.cpp main.cpp)
+file(GLOB APPS ${CMAKE_SOURCE_DIR}/app/*.cpp)
+
+add_executable(out ${APPS})
+target_link_libraries(out out1)

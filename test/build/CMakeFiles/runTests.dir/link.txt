@@ -1,1 +1,0 @@
-/usr/bin/c++    -rdynamic CMakeFiles/runTests.dir/home/emumba/Project_Cpp/src/Containers.cpp.o CMakeFiles/runTests.dir/main.cpp.o  -o runTests  -Wl,-Bstatic -lgtest -Wl,-Bdynamic -lpthread 

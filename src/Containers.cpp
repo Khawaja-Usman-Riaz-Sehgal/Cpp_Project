@@ -4,12 +4,14 @@
 #include<list>
 #include "../include/Containers.h"
 using namespace std;
+
 Containers :: Containers(){
     st_squared.maximum = 0;
     st_squared.minimum = 0;
     st_squared.size = 0;
     st_squared.sum_of_squares = 0;
     };
+    
 Containers :: ~Containers(){cout<<"Destructor is being called \n";};
 void Containers :: print()
 {
