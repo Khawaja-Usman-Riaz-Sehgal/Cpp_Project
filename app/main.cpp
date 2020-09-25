@@ -1,9 +1,11 @@
 #include<iostream>
-#include "../include/Containers.h"
+#include "Containers.h"
+#include "XYZ.h"
 using namespace std;
 int main()
 {
     Containers c,c1;
+    XYZ x;
     vector<int> v = {1,2,3,4,5,6};
     vector<int> squared=c.Squared(v);
     list<int> l = {1,2,3,4};
