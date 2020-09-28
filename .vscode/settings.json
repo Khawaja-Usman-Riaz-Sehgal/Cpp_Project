@@ -5,11 +5,15 @@
     "C_Cpp.errorSquiggles": "Enabled",
     "cSpell.words": [
         "container",
+        "dcmake",
+        "dcmake install prefix",
         "dirs",
         "googletest",
         "gtest",
         "gtest include dirs",
         "include",
+        "install",
+        "prefix",
         "pthread",
         "vect",
         "vect container"
