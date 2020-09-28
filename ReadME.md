@@ -25,6 +25,7 @@ How to use this Repo?
 
 After Cloning the repo and installating the required setup. Follow the following steps to run the code as well as test for them.
 
+* Create new directory build in Cpp_Project using : ```mkdir Cpp_Project/build ```
 * Change directory to Cpp_Project/build using : ```cd Cpp_Project/build ```
 * Clear the CMakeCache.txt using : ```rm CMakeCache.txt```
 * first of all build cmake using : ```cmake .. ```
