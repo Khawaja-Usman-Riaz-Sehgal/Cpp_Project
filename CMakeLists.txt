@@ -8,5 +8,8 @@ include_directories(include)
 add_subdirectory(src)
 add_subdirectory(app)
 add_subdirectory(test)
+add_subdirectory(third_party/googletest)
+set(BENCHMARK_ENABLE_GTEST_TESTS OFF)
 add_subdirectory(third_party/benchmark)
+
 add_subdirectory(benchmarks)

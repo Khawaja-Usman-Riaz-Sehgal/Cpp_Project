@@ -9,6 +9,7 @@
         "dcmake install prefix",
         "dirs",
         "googletest",
+        "googletests",
         "gtest",
         "gtest include dirs",
         "include",
