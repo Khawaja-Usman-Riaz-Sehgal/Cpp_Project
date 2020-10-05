@@ -25,6 +25,7 @@ How to use this Repo?
 
 After Cloning the repo and installating the required setup. Follow the following steps to run the code as well as test for them.
 
+* get sub modules into the project using : ```git submodule update --init --remote```
 * Create new directory build in Cpp_Project using : ```mkdir Cpp_Project/build ```
 * Change directory to Cpp_Project/build using : ```cd Cpp_Project/build ```
 * Clear the CMakeCache.txt using : ```rm CMakeCache.txt```
@@ -36,20 +37,26 @@ After Cloning the repo and installating the required setup. Follow the following
 File Structure:
 * Cpp_Project/
 * ├── app
-* │   ├── CMakeLists.txt
-* │   └── main.cpp
-* ├── build
+* │   ├── CMakeLists.txt
+* │   └── main.cpp
+* ├── benchmarks
+* │   ├── CMakeLists.txt
+* │   └── main.cpp
 * ├── CMakeLists.txt
+* ├── docker
+* ├── Dockerfile
 * ├── include
-* │   └── Containers.h
+* │   ├── Containers.h
+* │   └── XYZ.h
 * ├── ReadME.md
 * ├── src
-* │   ├── CMakeLists.txt
-* │   └── Containers.cpp
-* └── test
-* |   └── build
-* ├── CMakeLists.txt
-* └── test.cpp
-
-
-
+* │   ├── CMakeLists.txt
+* │   └── Containers.cpp
+* ├── test
+* │   ├── CMakeLists.txt
+* │   └── test.cpp
+* └── third_party
+* |   ├── benchmark
+* |   └── googletest
+* ├── .gitignore
+* ├── .gitmodules
