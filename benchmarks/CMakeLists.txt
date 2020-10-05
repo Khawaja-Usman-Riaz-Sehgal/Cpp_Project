@@ -6,8 +6,7 @@ project(Project_Cpp)
 include_directories(${CMAKE_SOURCE_DIR}/include)
 
 #find_package(Threads REQUIRED)
-find_package(benchmark REQUIRED)
-#link_directories(${Threads_LIBRARY})
+
 
 include_directories(${CMAKE_SOURCE_DIR}/third_party/benchmark/include)
 
