@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.16.3)
 project(Project_Cpp)
 
-SET(CMAKE_CXX_FLAGS  "-O3")
+
 
 include_directories(${CMAKE_SOURCE_DIR}/include)
 

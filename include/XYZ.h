@@ -1,7 +1,7 @@
 #ifndef XYZ_H
 #define XYZ_H
 
-#include <iostream>
+
 #include "Containers.h"
 
 class XYZ
